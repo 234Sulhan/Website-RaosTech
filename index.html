@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaosTech - Jasa Perbaikan HP & Laptop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">RaosTech</h1>
+                <!-- Tombol menu burger -->
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <!-- Ikon Media Sosial -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/aaculllll?igsh=ZHdzajF4amhxY3Qz" target="_blank" class="social-icon">
+                        <img src="img/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" class="social-icon">
+                        <img src="img/youtube.png" alt="YouTube">
+                    </a>
+                    <a href="https://wa.me/6281388669182" target="_blank" class="social-icon">
+                        <img src="img/whatsapp.png" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="hero-content container">
+            <h2>Solusi Cepat & Profesional</h2>
+            <p>Kami menyediakan layanan perbaikan HP dan laptop berkualitas dengan harga yang terjangkau.</p>
+            <a href="https://wa.me/6281388669182?text=Halo,%20saya%20ingin%20bertanya%20tentang%20produk%20Anda" class="btn-primary" target="_blank">Hubungi Kami</a>
+        </div>
+    </header>
+
+    <section id="about" class="about container">
+        <h2>Tentang Kami</h2>
+        <p>RaosTech adalah layanan terpercaya untuk perbaikan HP dan laptop. Dengan tim teknisi berpengalaman, kami memastikan perangkat Anda kembali berfungsi dengan baik.</p>
+    </section>
+
+    <section id="services" class="services container">
+        <h2>Layanan Kami</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Perbaikan Layar HP</h3>
+                <p>Ganti layar pecah dengan cepat dan aman.</p>
+            </div>
+            <div class="service-item">
+                <h3>Perbaikan Laptop</h3>
+                <p>Atasi masalah hardware atau software laptop Anda.</p>
+            </div>
+            <div class="service-item">
+                <h3>Baterai HP</h3>
+                <p>Ganti baterai HP dengan garansi kualitas.</p>
+            </div>
+            <div class="service-item">
+                <h3>Upgrade Komponen</h3>
+                <p>Tingkatkan performa laptop dengan upgrade RAM atau SSD.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery container">
+        <h2>Galeri HP yang Pernah Diservis</h2>
+        <p>Lihat beberapa perangkat yang pernah kami perbaiki.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="img/laptop.jpeg" alt="HP 1">
+                <p>Laptop HP - Masalah fan not responding</p>
+            </div>
+            <div class="gallery-item">
+                <img src="img/hp1.jpeg" alt="HP 2">
+                <p>HP IPhone - Mati total</p>
+            </div>
+            <div class="gallery-item">
+                <img src="img/hp2.jpeg" alt="HP 3">
+                <p>HP POCO M4 Pro - Kerusakan tombol on/of dan volume</p>
+            </div>
+            <div class="gallery-item">
+                <img src="img/sm-bt.jpeg" alt="HP 4">
+                <p>HP Samsung - Penggantian Baterai</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="location container">
+        <h2>Lokasi Kami</h2>
+        <p>Kunjungi lokasi kami untuk layanan perbaikan terbaik.</p>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15855.476193209088!2d106.7408459!3d-6.5382169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c3d3e90a6833%3A0x647ad93c3ee36083!2sBoash%20Caffe%20Politeknik%20Digital%20Boash%20Indonesia!5e0!3m2!1sen!2sid!4v1733843238526!5m2!1sen!2sid"
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <p>Konsultasikan masalah perangkat Anda kepada kami.</p>
+            <form action="mailto:sulhanudin340@gmail.com" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Nama Anda" required>
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <textarea name="message" placeholder="Pesan Anda" required></textarea>
+                <button type="submit" class="btn-primary">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 RaosTech. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

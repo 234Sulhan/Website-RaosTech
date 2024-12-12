@@ -1,0 +1,325 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+/* Header */
+.hero {
+    background: linear-gradient(to right, #007BFF, #00C6FF);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    font-weight: 600;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+/* Gaya dasar navbar 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f1c40f;
+}
+    */
+
+/* Gaya untuk ikon media sosial */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Tombol menu burger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        background-color: #333;
+        width: 200px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links a {
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.gallery p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Pusatkan elemen secara horizontal */
+    gap: 20px; /* Jarak antar elemen */
+}
+
+.gallery-item {
+    width: 200px; /* Atur lebar setiap item */
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%; /* Buat gambar responsif */
+    height: auto;
+    border-radius: 8px; /* Tambahkan sudut bulat untuk tampilan lebih menarik */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Zoom-in saat hover */
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+
+/* Lokasi Container */
+.location {
+    text-align: center; /* Untuk membuat teks berada di tengah */
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+.location h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.location p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center; /* Membuat elemen di dalamnya berada di tengah */
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Membatasi lebar maksimum peta */
+    margin: 0 auto; /* Agar elemen tetap berada di tengah */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Menghindari elemen keluar dari container */
+}
+
+.map-container iframe {
+    border: 0;
+    width: 100%; /* Lebar penuh untuk responsivitas */
+    height: 400px; /* Tinggi tetap */
+}
+
+
+
+/* Contact Section */
+.contact {
+    background: #007BFF;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
